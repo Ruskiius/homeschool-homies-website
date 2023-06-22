@@ -1,30 +1,65 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: blueviolet;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+  }
+  
+  header {
 
+    color: rgb(0, 0, 0);
+    
+    padding: 20px;
+  }
 
-.button-link {
+  .header-text {
+    background-color: rgba(0, 0, 0, 0);
+    
+  }
 
-   
-    background-color: rgb(51, 51, 51);
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+  
+  .button-link {
+
+    background-color: rgba(173, 133, 0, 0.671);
+    color: rgb(0, 0, 0);
     font-size: large;
-    text-decoration: none;
-    gap: 20px;
-    
-}
+    border-radius: 15px;
+    padding: 8px;
+  }
 
-
-.banner {
-
-    padding-top: 10px;
-}
-
-.buttons {
-
-    display: flexbox;
-
-    
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  
 }
