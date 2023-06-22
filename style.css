@@ -2,9 +2,17 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    
+    
   }
   
+  body {
+
+    background: rgb(139,151,255);
+    background: linear-gradient(180deg, rgba(139,151,255,1) 2%, rgba(160,255,252,1) 100%);
+
+  }
+
   header {
 
     color: rgb(0, 0, 0);
@@ -59,7 +67,12 @@
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100px;
+  justify-content: space-around;
+  height: 200px;
   
+}
+
+.discord {
+
+  padding-top: 20px;
 }
