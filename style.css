@@ -1,87 +1,155 @@
+/* Global styles are applied */
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-    
-  }
-  
-  body {
-    background: linear-gradient(180deg, rgba(100,149,237,1) 2%, rgba(135,206,250,1) 100%);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  /* This applies the specified fonts to all elements, in the order they are listed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  /* This removes all default margins from all elements */
+  margin: 0;
+
+  /* This removes all default padding from all elements */
+  padding: 0;
 }
 
+body {
+  /* This applies a linear gradient background to the body */
+  background: linear-gradient(180deg, #6495ED 2%, #87CEFA 100%);
 
-  header {
+  /* This displays flex, a way to layout your elements, to the body */
+  display: flex;
 
-    color: rgb(0, 0, 0);
-    background-color: #336699;
-    border-bottom: 2px solid #333;
-    padding: 20px;
-  }
+  /* This sets the direction of the flex items */
+  flex-direction: column;
 
-  .header-text {
-    background-color: rgba(0, 0, 0, 0);
-    
-  }
+  /* This makes sure the body takes up at least the full height of the view */
+  min-height: 100vh;
+}
 
-  
-  .wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .content {
-    flex: 1;
-  }
-  
-  
-  
-  .button-link {
+header {
+  /* This sets the text color within the header */
+  color: #000000;
 
-    background-color: #89CFF0;
-    color: #333;
-    font-size: large;
-    border-radius: 15px;
-    padding: 8px;
-  }
+  /* This sets the background color of the header */
+  background-color: #336699;
 
-  .button-link:hover {
-    background-color: #6495ED;
-  }
+  /* This sets the border at the bottom of the header */
+  border-bottom: 2px solid #333;
+
+  /* This adds space between the content of the header and its border */
+  padding: 20px;
+}
+
+.header-text {
+  /* This makes the background of the header-text transparent */
+  background-color: transparent;
+
+  /* This makes the header-text 60% bigger */
+  font-size: 160%;  /* 100% is the base size, so 160% makes it 60% larger */
+}
+
+.wrapper {
+  /* This causes the wrapper to grow and shrink to fit the remaining space */
+  flex: 1;
+
+  /* This sets the layout of the wrapper's content to flex */
+  display: flex;
+
+  /* This sets the direction of the flex items within the wrapper */
+  flex-direction: column;
+}
+
+.content {
+  /* This causes the content to grow and shrink to fit the remaining space */
+  flex: 1;
+}
+
+.button-link {
+  /* This sets the background color of the button */
+  background-color: #89CFF0;
+
+  /* This sets the text color of the button */
+  color: #333;
+
+  /* This sets the font-size of the button */
+  font-size: large;
+
+  /* This makes the corners of the button rounded */
+  border-radius: 15px;
+
+  /* This adds space between the content of the button and its border */
+  padding: 8px;
+
+  /* This removes the default underline style from the link */
+  text-decoration: none;
+
+  /* This makes the link behave like a block-level element while staying inline */
+  display: inline-block;
+}
+
+.button-link:hover, .button-link:focus {
+  /* This changes the background color of the button when hovered or focused */
+  background-color: #6495ED;
+}
 
 .discord {
-
+  /* This adds space at the top of the discord iframe */
   padding-top: 20px;
 }
 
 .flex-container {
+  /* This adds space at the top of the flex-container */
   margin-top: 20px;
-  justify-content: center; /* Center buttons horizontally */
 
+  /* This aligns the flex items along the horizontal line in the center */
+  align-items: center;
+
+  /* This evenly distributes the flex items along the horizontal line with equal space between them */
+  justify-content: space-between;
+
+  /* This adds space between the flex items */
+  gap: 5px;
 }
-
 
 .header-container {
+  /* This sets the layout of the header-container's content to flex */
   display: flex;
-  justify-content: start;
-  gap: 8px;
- align-items: center;/* Vertically aligns elements */
-  padding: 20px; /* Keeps the padding that was previously in the header */
+
+  /* This evenly distributes the flex items along the horizontal line with equal space around them */
+  justify-content: space-evenly;
+
+  /* This centers the header-container */
+  margin: 0 auto;
+
+  /* This adds space between the content of the header-container and its border */
+  padding: 0 20px;
+
+  /* This aligns the flex items along the vertical line in the center */
+  align-items: center;
+
+  /* This limits the maximum width of the header-container */
+  max-width: 1200px;
 }
 
-
-
-
-
 footer {
+  /* This sets the layout of the footer's content to flex */
   display: flex;
-color: darkgray;
+
+  /* This sets the text color within the footer */
+  color: darkgray;
+
+  /* This adds space at the top of the footer */
   margin-top: 10px;
+
+  /* This sets the background color of the footer */
   background-color: #336699;
+
+  /* This sets the border at the top of the footer */
   border-top: 2px solid #333;
+
+  /* This centers the content within the footer along the horizontal line */
   justify-content: center;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+/* Adjust styles here as needed */
 }
