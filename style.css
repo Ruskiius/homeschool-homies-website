@@ -35,15 +35,18 @@ header {
   border-bottom: 2px solid #333;
 
   /* This adds space between the content of the header and its border */
-  padding: 20px;
+  padding: 10px;
+
 }
 
 .header-text {
   /* This makes the background of the header-text transparent */
   background-color: transparent;
 
+ margin-left: 10px;
+
   /* This makes the header-text 60% bigger */
-  font-size: 160%;  /* 100% is the base size, so 160% makes it 60% larger */
+  font-size: 200%;  /* 100% is the base size, so 200% makes it 60% larger */
 }
 
 .wrapper {
@@ -72,6 +75,8 @@ header {
   /* This sets the font-size of the button */
   font-size: large;
 
+  border: 2px solid #272727;
+
   /* This makes the corners of the button rounded */
   border-radius: 15px;
 
@@ -88,6 +93,8 @@ header {
 .button-link:hover, .button-link:focus {
   /* This changes the background color of the button when hovered or focused */
   background-color: #6495ED;
+  border: 2px solid #666;
+
 }
 
 .discord {
@@ -96,17 +103,17 @@ header {
 }
 
 .flex-container {
-  /* This adds space at the top of the flex-container */
-  margin-top: 20px;
+  display: flex;
 
-  /* This aligns the flex items along the horizontal line in the center */
-  align-items: center;
+  margin-top:  50px;
+
+  padding-left: 10px;
 
   /* This evenly distributes the flex items along the horizontal line with equal space between them */
-  justify-content: space-between;
+  justify-content: left;
 
   /* This adds space between the flex items */
-  gap: 5px;
+  gap: 10px;
 }
 
 .header-container {
@@ -114,13 +121,9 @@ header {
   display: flex;
 
   /* This evenly distributes the flex items along the horizontal line with equal space around them */
-  justify-content: space-evenly;
+  justify-content: left;
 
-  /* This centers the header-container */
-  margin: 0 auto;
-
-  /* This adds space between the content of the header-container and its border */
-  padding: 0 20px;
+ 
 
   /* This aligns the flex items along the vertical line in the center */
   align-items: center;
